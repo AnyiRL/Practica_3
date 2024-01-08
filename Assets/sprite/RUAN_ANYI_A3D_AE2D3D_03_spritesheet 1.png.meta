@@ -1,0 +1,1768 @@
+fileFormatVersion: 2
+guid: b9be519ee4022434c8f273bdfe7f6ce5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 580
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8908c88305216644a0e990ce1eb28d3
+      internalID: 85057802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 580
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4584e3f5c4e924d84606b62b9f5747
+      internalID: -1362355129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 580
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67c81bf44ce20242b25dce5561ae520
+      internalID: 1554824988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 580
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affe8e06117dd7248819b4b7043c9652
+      internalID: -405847613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 580
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b89b35e842b94ca409c84646421fa
+      internalID: -1340820856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 580
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44090f311bb7b3448f002da6d9a972a
+      internalID: -273016609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 580
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9cff690140c9942b58427a7a4ce527
+      internalID: 1547803699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 580
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096ecb797a2a55e48a8fc3841b187f95
+      internalID: 987647862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 516
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c610fd25eba2f9944a367a9139b6783f
+      internalID: 1009093621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 516
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc72a8e16e251aa47ad7456a3a4a92e0
+      internalID: 1284223287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 516
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2edbbd6db055c6469e8c9bf828da232
+      internalID: -1015029404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 516
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aeaa15cb78cfb4cadd3f041ede86c4
+      internalID: 2086462818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 516
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68884a12ddce8fb4a9d3f083f4c70829
+      internalID: -408583994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 516
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f096f475ad4342876c6cdca431080
+      internalID: 1851751246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 516
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69c9e7626f1af64c97c34a02b8974c4
+      internalID: -1703264721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 516
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1136a004169df4d928882cf537efec
+      internalID: -2016213256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 452
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50d86fcaf0e34844ae2d290da77747b
+      internalID: 277368812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 452
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f0de2346b8c0345a3e0a2cf1dfe6d8
+      internalID: -1914720012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 452
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852fe5f2af3fc8b479d21e9d349a2975
+      internalID: 526522986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 452
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42be5ca6bb70044f86b8229d0160d3f
+      internalID: 324541666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 452
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b056d121e7b584ab943e0b26b6ff44
+      internalID: 727790852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 452
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00594ad398d94a745b15ff617bc652cd
+      internalID: -858473865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 452
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015e67ef566143448b51f3390cae0d5e
+      internalID: 503499061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 452
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eec3276b3a874419fbb9015384760e
+      internalID: 2031521583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 388
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f3c54d750c8a24780c702a6dfaeb91
+      internalID: 2094089860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 388
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b5a0fbcd50bd6478102c8d979c51c2
+      internalID: 966483042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 388
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c772fdd47d2ab62419d15a55ed7d2310
+      internalID: 1351979176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 388
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cb16f5678c85c418e914f74126951a
+      internalID: -1572845361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 388
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e3177adfecd52419fa38c94315dcd0
+      internalID: 1592615860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 388
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12140c48716de69489ff53bf60451f2b
+      internalID: -1661101980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 324
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404f264266914054c90232b7d67ad609
+      internalID: -551141549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 324
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207002377c45e654fb3821db19bbd38f
+      internalID: 1575293919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 324
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c707737d338364a8391b70a538740c
+      internalID: -1149365809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 324
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8da275747694f84f89c1dff918f6743
+      internalID: 912505709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 324
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a58e3c9e56cdc42902528cea45dbcf
+      internalID: 737705362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 324
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff54a6bda6ad554f9564d49063e077a
+      internalID: -456045840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 324
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08e16bfe94239a4897e2082a7222a87
+      internalID: 875226829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 324
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a7f53d07318ac46a2c862b2a5fec84
+      internalID: 2011915578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_38
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 324
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389d88c2ff626b846ba1f4ed5438d534
+      internalID: 2054444467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_39
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 304
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1239cae191d134280381da61d5f039
+      internalID: 606990113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_40
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 311
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cac3428f0d84146a05b84adf856c72
+      internalID: 1336025298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_41
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 313
+        width: 18
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e991c6d7e8ce398459f95ecbee0b48d4
+      internalID: -654076873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_42
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 260
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47483c004eaa84742b8dda1c832593c0
+      internalID: 1813529394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_43
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 260
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd2a8dad7c85484999516e33669a7bc
+      internalID: -1819226885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_44
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 294
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6403aec7d659f044b88db56eb8e5ab03
+      internalID: -45605737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_45
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 260
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9254c210003c3429aee30d85adebde
+      internalID: -1103594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_46
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 260
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6061b1b1edcc4b744b1569e3cb77c243
+      internalID: 490013480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_47
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 260
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac740c7b5d627247b85dd37887841d5
+      internalID: 106172331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_48
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 260
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e574e2a86458aee418f3e50488c4384b
+      internalID: -2076157691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_49
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 260
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b712a709f91748049b923668763f837b
+      internalID: -548619358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_50
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 287
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1d379e582b4e64294de01ca8f835d2
+      internalID: -1520001759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_51
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 196
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9fd6c945e6d57479b9606361979b37
+      internalID: 915752917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_52
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e251648e498344889f7fd328581a99
+      internalID: 1952156693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_53
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 260
+        width: 18
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed110da574980624c8d1ce57a1f7a619
+      internalID: 1957867159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_54
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 260
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d0178804b531c40bad689ca1759d94
+      internalID: 151244941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_55
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 260
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4ebe8d8f6b0d04dafa4ca0a5b27058
+      internalID: 1538324506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_56
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 260
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1781df00afa344f84ef65780b600db
+      internalID: -1851222142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_57
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 260
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541b5ed0aa57e8e40a84484d30763ec8
+      internalID: 1447852224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_58
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 260
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803ef8c6421b8064eb89afee5a291cd7
+      internalID: 1537503327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_59
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 149
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005dd852e20496b46b048d0524012aee
+      internalID: 161808162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_60
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 149
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51180adeccefbc48aa5d9896a317e6a
+      internalID: 1962166625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_61
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 147
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acc0dd52593fa242b124c76ad7e29b4
+      internalID: 1108707869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 146
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a67567609d9604187663d438f9441a
+      internalID: -115687635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_63
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 139
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc17f56a71335346934befdb9a250ad
+      internalID: -1345153171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_64
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 86
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6bb24d26dd2574abd525f034884c5d
+      internalID: 275169649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_65
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 93
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a150bb4d4c3814aacd384ab6b8a682
+      internalID: 834470385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872ae4907512a7a4ab4fd53024be86a2
+      internalID: 444522535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_67
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 88
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05326d3bc28b14b48b741c432f0aa1fa
+      internalID: -114190634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_68
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 105
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f257071f2297e419f9a536e5d370a9
+      internalID: -83130380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_69
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 84
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1155d1a416ff09b43ac29192e33e979d
+      internalID: -1410622627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_70
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 88
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bd28eaa9ce31b4b8273a5b881eab70
+      internalID: -699097792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_71
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 88
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53d99c8e16ad954fb7983aa56e0174c
+      internalID: 1214757588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_72
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 88
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f452f7ff2d96ea8489301fec15be0249
+      internalID: 742346896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_73
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 85
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be0ad1e8f0d2b74dbeeacfc170dd8eb
+      internalID: 1867206405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_0: 85057802
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_1: -1362355129
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_10: -1015029404
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_11: 2086462818
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_12: -408583994
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_13: 1851751246
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_14: -1703264721
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_15: -2016213256
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_16: 277368812
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_17: -1914720012
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_18: 526522986
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_19: 324541666
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_2: 1554824988
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_20: 727790852
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_21: -858473865
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_22: 503499061
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_23: 2031521583
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_24: 2094089860
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_25: 966483042
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_26: 1351979176
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_27: -1572845361
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_28: 1592615860
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_29: -1661101980
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_3: -405847613
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_30: -551141549
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_31: 1575293919
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_32: -1149365809
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_33: 912505709
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_34: 737705362
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_35: -456045840
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_36: 875226829
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_37: 2011915578
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_38: 2054444467
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_39: 606990113
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_4: -1340820856
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_40: 1336025298
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_41: -654076873
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_42: 1813529394
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_43: -1819226885
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_44: -45605737
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_45: -1103594
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_46: 490013480
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_47: 106172331
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_48: -2076157691
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_49: -548619358
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_5: -273016609
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_50: -1520001759
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_51: 915752917
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_52: 1952156693
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_53: 1957867159
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_54: 151244941
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_55: 1538324506
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_56: -1851222142
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_57: 1447852224
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_58: 1537503327
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_59: 161808162
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_6: 1547803699
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_60: 1962166625
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_61: 1108707869
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_62: -115687635
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_63: -1345153171
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_64: 275169649
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_65: 834470385
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_66: 444522535
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_67: -114190634
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_68: -83130380
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_69: -1410622627
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_7: 987647862
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_70: -699097792
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_71: 1214757588
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_72: 742346896
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_73: 1867206405
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_8: 1009093621
+      RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_9: 1284223287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
