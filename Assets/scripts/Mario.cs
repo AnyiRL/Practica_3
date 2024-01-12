@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,77 +7,71 @@ public class Mario : MonoBehaviour
 {
 
     public float speed;
-    public KeyCode leftKey, rightKey, upKey;
+    public KeyCode leftKey, rightKey, jumpKey;
     public float LayerCast;
     private Rigidbody2D rb;
     private Vector2 dir;
-    private bool isJumping;
     public float jumpForce;
     public float rayDistance;
-
+    public LayerMask groundMask;                       //capa de colisiones
+    private bool _intentionToJump;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
-
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       
 
+        dir = Vector2.zero;
         if (Input.GetKey(leftKey))
         {
             dir = new Vector2(-1, 0);
         }
-
         else if (Input.GetKey(rightKey))
         {
             dir = new Vector2(1, 0);
         }
-        else  
+        _intentionToJump = false;
+        if (Input.GetKey(jumpKey))
         {
-            dir = new Vector2(0, 0);
-        }
-
-        RaycastHit2D[] colliders = Physics2D.RaycastAll(transform.position, Vector2.down, rayDistance);
-        if (Input.GetKey(upKey))
-        {
-            isJumping = true;   
+            _intentionToJump = true;   
         }
         
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmos()                                      //gizmos=Lineas guias
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
+        Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);                                     
     }
 
     private void FixedUpdate()
     {
        if( dir != Vector2.zero)
         {
-            rb.velocity = dir * speed;
+            float currentYVel = rb.velocity.y;                            //para que la velocidad de la caida sea constante
+            Vector2 nVel = dir * speed;
+            nVel.y = currentYVel;
+            rb.velocity = nVel;
         }
-       if (isJumping ) 
+       if (_intentionToJump && IsGrounded()) 
         {
-           rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale));
+           rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
+
         }
+        
     }
 
     private bool IsGrounded()
     {
-        RaycastHit2D[] raycastHits = Physics2D.RaycastAll(transform.position, Vector2.down, rayDistance);
-        foreach(RaycastHit2D raycastHit in raycastHits)
+        RaycastHit2D collision = Physics2D.Raycast(transform.position, Vector2.down, rayDistance,groundMask);  //
+        if (collision)
         {
-            if (raycastHit.collider.gameObject.CompareTag ("Suelo"))
-            {
-                return true;
-            }
+            return true;
         }
         return false;
     }
