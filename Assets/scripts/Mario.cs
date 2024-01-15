@@ -7,19 +7,23 @@ public class Mario : MonoBehaviour
 {
 
     public float speed;
+    private SpriteRenderer _rend;
     public KeyCode leftKey, rightKey, jumpKey;
     public float LayerCast;
-    private Rigidbody2D rb;
-    private Vector2 dir;
     public float jumpForce;
     public float rayDistance;
+    
+    private Rigidbody2D rb;
+    private Vector2 dir;
     public LayerMask groundMask;                       //capa de colisiones
     private bool _intentionToJump;
+    private Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        _rend = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,16 +33,26 @@ public class Mario : MonoBehaviour
         dir = Vector2.zero;
         if (Input.GetKey(leftKey))
         {
+            _rend.flipX = true;
             dir = new Vector2(-1, 0);
         }
         else if (Input.GetKey(rightKey))
         {
+            _rend.flipX= false;
             dir = new Vector2(1, 0);
         }
         _intentionToJump = false;
         if (Input.GetKey(jumpKey))
         {
             _intentionToJump = true;   
+        }
+        if(dir != Vector2.zero)                     //andando                           //#region #endregion
+        {
+            _animator.SetBool("isWalking", true);
+        }
+        else                                        //parados
+        {
+            _animator.SetBool("isWalking", false);
         }
         
     }
@@ -51,16 +65,19 @@ public class Mario : MonoBehaviour
 
     private void FixedUpdate()
     {
+      
        if( dir != Vector2.zero)
         {
             float currentYVel = rb.velocity.y;                            //para que la velocidad de la caida sea constante
             Vector2 nVel = dir * speed;
             nVel.y = currentYVel;
             rb.velocity = nVel;
-        }
+        } 
+       
        if (_intentionToJump && IsGrounded()) 
         {
-           rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
 
         }
         
