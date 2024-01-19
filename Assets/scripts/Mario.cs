@@ -12,18 +12,21 @@ public class Mario : MonoBehaviour
     public float LayerCast;
     public float jumpForce;
     public float rayDistance;
-    
+    private float currentTime = 0;
+
     private Rigidbody2D rb;
     private Vector2 dir;
     public LayerMask groundMask;                       //capa de colisiones
     private bool _intentionToJump;
     private Animator _animator;
+    private Vector3 originalPosition;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         _rend = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
+        originalPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -41,12 +44,13 @@ public class Mario : MonoBehaviour
             _rend.flipX= false;
             dir = new Vector2(1, 0);
         }
+
         _intentionToJump = false;
         if (Input.GetKey(jumpKey))
         {
-            _intentionToJump = true;   
+            _intentionToJump = true;
         }
-        if(dir != Vector2.zero)                     //andando                           //#region #endregion
+        if(dir != Vector2.zero)                     //andando                           //#region #endregion para ordenar el codigo
         {
             _animator.SetBool("isWalking", true);
         }
@@ -54,7 +58,14 @@ public class Mario : MonoBehaviour
         {
             _animator.SetBool("isWalking", false);
         }
-        
+        currentTime += Time.deltaTime;                            //Time.deltaTime - Tiempo en segundos que tarda en completarse el último frame //currentTime total
+        if (currentTime >= 2.5f)
+        {
+            _animator.SetBool("idle", true);
+            currentTime = 0;
+
+        }
+
     }
 
     private void OnDrawGizmos()                                      //gizmos=Lineas guias
@@ -65,7 +76,7 @@ public class Mario : MonoBehaviour
 
     private void FixedUpdate()
     {
-      
+        bool grnd = IsGrounded();
        if( dir != Vector2.zero)
         {
             float currentYVel = rb.velocity.y;                            //para que la velocidad de la caida sea constante
@@ -74,13 +85,14 @@ public class Mario : MonoBehaviour
             rb.velocity = nVel;
         } 
        
-       if (_intentionToJump && IsGrounded()) 
+       if (_intentionToJump && grnd) 
         {
+            _animator.Play("jump");
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
 
         }
-        
+        _animator.SetBool("isGrounded",grnd);                       // optimizar
     }
 
     private bool IsGrounded()
@@ -91,6 +103,12 @@ public class Mario : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public void ResetPosition()
+    {
+        transform.position = originalPosition;
+        _animator.SetBool("start", true);
+
     }
 
 
