@@ -1,22 +1,24 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Mario : MonoBehaviour
 {
 
     public float speed;
-    private SpriteRenderer _rend;
     public KeyCode leftKey, rightKey, jumpKey;
     public float LayerCast;
     public float jumpForce;
     public float rayDistance;
-    private float currentTime = 0;
+    public KeyCode upKey, downKey;
+    public LayerMask groundMask;   //capa de colisiones
 
+    private float currentTime = 0;
+    private SpriteRenderer _rend;
     private Rigidbody2D rb;
-    private Vector2 dir;
-    public LayerMask groundMask;                       //capa de colisiones
+    private Vector2 dir;                 
     private bool _intentionToJump;
     private Animator _animator;
     private Vector3 originalPosition;
@@ -65,6 +67,7 @@ public class Mario : MonoBehaviour
             currentTime = 0;
 
         }
+        
 
     }
 
@@ -94,6 +97,23 @@ public class Mario : MonoBehaviour
         }
         _animator.SetBool("isGrounded",grnd);                       // optimizar
     }
+    //private void OnTriggerEnter2D(Collider2D collision)                   // Collider quién se ha chocado
+
+    //{
+    //    dir = new Vector2(0,0);
+    //    if (collision.GetComponent<Escalera>() != null && Input.GetKey(upKey))
+    //    {
+    //        dir = new Vector2(0, 1);
+    //        rb.gravityScale = 0;
+    //    }
+    //    if (collision.GetComponent<Escalera>() != null && Input.GetKey(downKey))
+    //    {
+    //        dir = new Vector2(0, -1);
+    //        rb.gravityScale = 0;
+    //    }
+
+    //}
+    
 
     private bool IsGrounded()
     {
@@ -107,9 +127,15 @@ public class Mario : MonoBehaviour
     public void ResetPosition()
     {
         transform.position = originalPosition;
-        _animator.SetBool("start", true);
+        _animator.Play("start");
 
     }
+    //public void ResetGame()
+    //{
+    //    _animator.Play("death");
+    //    SceneManager.LoadScene("Mario");
+    //}
+
 
 
 }
