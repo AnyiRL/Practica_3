@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Goomba : MonoBehaviour
 {
-    private SpriteRenderer _rend;
-    private Vector2 _dir;
+    //private SpriteRenderer _rend;
+    //private Vector2 _dir;
     //private float x;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        _rend = GetComponent<SpriteRenderer>();  
+        //_rend = GetComponent<SpriteRenderer>();  
     }
 
     void Update()

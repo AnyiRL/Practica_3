@@ -3,7 +3,9 @@ guid: 98d9b3fe1e84d9348bfb3975d74c9143
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tortuga: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+  - enemigo: {fileID: 4583387109321714187, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (vidasTotales < 0)
+        if (vidasTotales < 1)
         {
             FindAnyObjectByType<Mario>().ResetGame();
         }
