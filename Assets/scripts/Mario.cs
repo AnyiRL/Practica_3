@@ -1,5 +1,6 @@
  using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,6 +23,8 @@ public class Mario : MonoBehaviour
     private bool _intentionToJump;
     private Animator _animator;
     private Vector3 originalPosition;
+    private bool onStair;
+    private float originalSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,7 @@ public class Mario : MonoBehaviour
         _rend = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         originalPosition = transform.position;
+        originalSpeed = speed;
     }
 
     // Update is called once per frame
@@ -67,6 +71,11 @@ public class Mario : MonoBehaviour
             currentTime = 0;
 
         }
+
+        if(onStair)
+        {
+            Escalera();
+        }
         
 
     }
@@ -84,7 +93,7 @@ public class Mario : MonoBehaviour
         {
             float currentYVel = rb.velocity.y;                            //para que la velocidad de la caida sea constante
             Vector2 nVel = dir * speed;
-            nVel.y = currentYVel;
+            nVel.y = currentYVel + nVel.y;
             rb.velocity = nVel;
         } 
        
@@ -97,22 +106,22 @@ public class Mario : MonoBehaviour
         }
         _animator.SetBool("isGrounded",grnd);                       // optimizar
     }
-    //private void OnTriggerEnter2D(Collider2D collision)                   // Collider quién se ha chocado
+    public void Escalera()
 
-    //{
-    //    dir = new Vector2(0,0);
-    //    if (collision.GetComponent<Escalera>() != null && Input.GetKey(upKey))
-    //    {
-    //        dir = new Vector2(0, 1);
-    //        rb.gravityScale = 0;
-    //    }
-    //    if (collision.GetComponent<Escalera>() != null && Input.GetKey(downKey))
-    //    {
-    //        dir = new Vector2(0, -1);
-    //        rb.gravityScale = 0;
-    //    }
+    {
+        if (Input.GetKey(upKey))
+        {
+            _animator.Play("subir");
+            dir = new Vector2(0, 1);
+        }
+        else if (Input.GetKey(downKey))
+        {
+            _animator.Play("bajar");
+            dir = new Vector2(0, -1);
+        }
+       
 
-    //}
+    }
     
 
     private bool IsGrounded()
@@ -130,12 +139,51 @@ public class Mario : MonoBehaviour
         _animator.Play("start");
 
     }
-    //public void ResetGame()
-    //{
-    //    _animator.Play("death");
-    //    SceneManager.LoadScene("Mario");
-    //}
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        currentTime += Time.deltaTime;
+        if (collision.gameObject.GetComponent<Goomba>() != null)
+        {
+            _animator.Play("death");
+            
+            if (currentTime == currentTime + 3)
+            {
+                ResetGame();
+            }
+            
+        }
+    }
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("sprite");
+        _animator.Play("start");
+    }
+    public void Final()
+    {
+        _animator.Play("final");
+        Debug.Log("YouWin");
+    }
+
+    public void SetOnStair(bool value)
+    {
+        onStair = value;
+        if(value)
+        {
+            rb.gravityScale = 0;
+            speed = originalSpeed /10;
+        }
+        else
+        {
+            rb.gravityScale = 1;
+            speed = originalSpeed;
+        }
+    }
+
+    public bool GetOnStair()
+    {
+        return onStair; 
+    }
 
 
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Goomba : MonoBehaviour
 {
-    public float speed;
-    public KeyCode leftKey, rightKey;
     private SpriteRenderer _rend;
     private Vector2 _dir;
     //private float x;
@@ -19,24 +17,33 @@ public class Goomba : MonoBehaviour
 
     void Update()
     {
-        if(_dir == new Vector2(-1, 0))
-        {
-            _rend.flipX = true;
+        //if(_dir == new Vector2(-1, 0))
+        //{
+        //    _rend.flipX = true;
       
-        }
-        if (_dir == new Vector2(1, 0))
-        {
-            _rend.flipX = false;
-        }
+        //}
+        //if (_dir == new Vector2(1, 0))
+        //{
+        //    _rend.flipX = false;
+        //}
         
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Mario marioComponent = collision.gameObject.GetComponent<Mario>();
         if (collision.gameObject.GetComponent<Mario>() != null)
         {
-
-            Destroy(gameObject);
+            marioComponent.ResetGame();  
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Mario>() != null)
+        {
+            Destroy(gameObject);
+        }
+
+    }
     
+
 }

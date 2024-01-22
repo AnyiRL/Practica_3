@@ -17,4 +17,5 @@ public class vidas : MonoBehaviour
         }
 
     }
+
 }

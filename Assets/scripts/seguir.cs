@@ -11,7 +11,7 @@ public class seguir : MonoBehaviour
  
     void Update()
     {
-       
+        
         enemigo.transform.position = Vector3.MoveTowards(enemigo.transform.position,tortuga.transform.position,speed);
     }
     

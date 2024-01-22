@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Escalera : MonoBehaviour
 {
-    
-    private Vector2 _dir;
-    private Rigidbody2D rb;
-
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb = GetComponent<Rigidbody2D>(); 
-        rb.gravityScale = 0;
+        Mario marioComponent = collision.GetComponent<Mario>();
+        if (marioComponent != null)
+        {
+            marioComponent.SetOnStair(true);
+        }
     }
 
-    
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Mario marioComponent = collision.GetComponent<Mario>();
+        if (marioComponent != null)
+        {
+            marioComponent.SetOnStair(false);
+        }
+    }
 }

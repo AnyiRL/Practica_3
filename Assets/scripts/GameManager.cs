@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     private float puntosTotales;
     public float VidasTotales { get { return vidasTotales; } }       
     private float vidasTotales = 3 ;
+
     
-   
     public void SumarPuntos( float puntosASumar)
     {
         puntosTotales += puntosASumar;
@@ -22,14 +22,12 @@ public class GameManager : MonoBehaviour
     {
         vidasTotales -= vidasARestar;
     }
-
     void Update()
     {
         if (vidasTotales < 0)
-       {
-            GetComponent<Mario>().ResetPosition();
-            vidasTotales = 3;
-            puntosTotales = 0;
-       }
+        {
+            FindAnyObjectByType<Mario>().ResetGame();
+        }
     }
+    
 }

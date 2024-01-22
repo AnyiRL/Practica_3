@@ -25,7 +25,10 @@ public class hoja : MonoBehaviour
             //currentTime = 0;
             //maxTime = 0;
         }
-        
-
+        if (collision.gameObject.GetComponent<Goomba>() != null)
+        {
+            Destroy(collision.gameObject);
+        }
     }
+    
 }
