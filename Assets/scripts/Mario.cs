@@ -126,7 +126,7 @@ public class Mario : MonoBehaviour
 
     private bool IsGrounded()
     {
-        RaycastHit2D collision = Physics2D.Raycast(transform.position, Vector2.down, rayDistance,groundMask);  //
+        RaycastHit2D collision = Physics2D.Raycast(transform.position, Vector2.down, rayDistance,groundMask);  
         if (collision)
         {
             return true;
@@ -161,6 +161,7 @@ public class Mario : MonoBehaviour
     }
     public void Final()
     {
+        
         _animator.Play("final");
         Debug.Log("YouWin");
     }
@@ -184,6 +185,13 @@ public class Mario : MonoBehaviour
     {
         return onStair; 
     }
+    public void Cambio()
+    {
+        SceneManager.LoadScene("sprite 1");
+        _animator.Play("start");
+        
+    }
+
 
 
 }

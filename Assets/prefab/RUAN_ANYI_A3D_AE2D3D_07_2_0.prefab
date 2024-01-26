@@ -181,7 +181,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33, y: 0.33}
+  m_Size: {x: 0.26, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &8191227717080121505
 MonoBehaviour:
@@ -244,4 +244,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tortuga: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
   enemigo: {fileID: 4583387109321714187}
-  speed: 0.003
+  speed: 0.0006

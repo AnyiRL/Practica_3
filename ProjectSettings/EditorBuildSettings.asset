@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/sprite.unity
     guid: 198e1d30b1175f8459417bc08428c236
+  - enabled: 1
+    path: Assets/Scenes/sprite 1.unity
+    guid: 428f4e37920742c41be17229de7174c8
   m_configObjects: {}
