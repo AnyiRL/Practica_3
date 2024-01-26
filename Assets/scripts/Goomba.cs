@@ -7,12 +7,12 @@ public class Goomba : MonoBehaviour
     //private SpriteRenderer _rend;
     //private Vector2 _dir;
     //private float x;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        //_rend = GetComponent<SpriteRenderer>();  
+        //_rend = GetComponent<SpriteRenderer>();
+        
     }
 
     void Update()
@@ -44,6 +44,8 @@ public class Goomba : MonoBehaviour
         }
 
     }
+    
+    //singleton accesible para cualquiera, solo existe una instancia  
     
 
 }

@@ -59,10 +59,12 @@ public class Mario : MonoBehaviour
         if(dir != Vector2.zero)                     //andando                           //#region #endregion para ordenar el codigo
         {
             _animator.SetBool("isWalking", true);
+            //_animator.Play("walk");
         }
         else                                        //parados
         {
             _animator.SetBool("isWalking", false);
+            //_animator.Play("walk");
         }
         currentTime += Time.deltaTime;                            //Time.deltaTime - Tiempo en segundos que tarda en completarse el último frame //currentTime total
         if (currentTime >= 2.5f)

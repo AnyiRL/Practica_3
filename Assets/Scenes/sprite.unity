@@ -4425,6 +4425,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9093846585667800606, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093846585667800606, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
       propertyPath: tortuga
       value: 
       objectReference: {fileID: 545613081}

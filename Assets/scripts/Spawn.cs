@@ -10,7 +10,7 @@ public class Spawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        maxTime = 4;
+        maxTime = 7;
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class Spawn : MonoBehaviour
 
             currentTime = 0;
 
-            maxTime = 4;
+            maxTime = 7;
 
         }
     }

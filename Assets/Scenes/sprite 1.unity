@@ -2880,11 +2880,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2036314584626318273, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.393
+      value: 9.977
       objectReference: {fileID: 0}
     - target: {fileID: 2036314584626318273, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.771
+      value: 14.544
       objectReference: {fileID: 0}
     - target: {fileID: 2036314584626318273, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2942,11 +2942,24 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9093846585667800606, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093846585667800606, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+      propertyPath: tortuga
+      value: 
+      objectReference: {fileID: 1136113687}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+--- !u!1 &1136113687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4583387109321714187, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+  m_PrefabInstance: {fileID: 1136113686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1225956030
 GameObject:
   m_ObjectHideFlags: 0

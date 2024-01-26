@@ -9,9 +9,8 @@ public class cabeza : MonoBehaviour
         Mario marioComponent = collision.gameObject.GetComponent<Mario>();
         if (collision.gameObject.GetComponent<Mario>() != null)
         {
-            
+            Destroy(gameObject.transform.parent.gameObject);     //acceder al padre y destruir(otra manera de hacer la cabeza)
             marioComponent.ResetPosition();
-
         }
     }
 }
