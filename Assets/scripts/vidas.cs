@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class vidas : MonoBehaviour
 {
-    public float valor = 1;
+    public int valor = 1;
     public GameManager manager;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -12,7 +12,7 @@ public class vidas : MonoBehaviour
         Mario marioComponent = collision.GetComponent<Mario>();
         if (marioComponent != null)
         {
-            manager.SumarVidas(valor);
+            manager.Setlifes(valor);
             Destroy(gameObject);
         }
 

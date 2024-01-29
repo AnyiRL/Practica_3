@@ -12,8 +12,8 @@ public class puntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        puntuacion.text = manager.PuntosTotales.ToString();
-        vidas.text = manager.VidasTotales.ToString();
+        puntuacion.text = manager.GetPoints().ToString();
+        vidas.text = manager.GetLifes().ToString();
 
     }
 }

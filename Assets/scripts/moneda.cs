@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class moneda : MonoBehaviour
 {
-    public float valor = 1;
+    public int valor = 1;
     public GameManager manager;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -12,7 +12,7 @@ public class moneda : MonoBehaviour
         Mario marioComponent = collision.GetComponent<Mario>();
         if (marioComponent != null)
         {
-            manager.SumarPuntos(valor);
+            manager.SetPoints(valor);
             Destroy(gameObject);
         }
         

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class GameManager1 : MonoBehaviour
+public class GameManager1 : MonoBehaviour      //UI unity interfaces
 {
     public static GameManager1 instance;
 
@@ -29,19 +29,20 @@ public class GameManager1 : MonoBehaviour
         time += Time.deltaTime;
     }
 
+    //getter obtener valor
     public float GetTime()
     {
         return time;   
     }
-
-    //public void SetTime(float value)   para cambiar tiempo
-    //{
-    //}
-
     public int GetPoints(int points)
     {
         return points;
     }
+
+    //setter establecer, cambiar
+    //public void SetTime(float value)   para cambiar tiempo
+    //{
+    //}
 
     public void SetPoints(int value)
     {
