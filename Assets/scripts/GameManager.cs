@@ -80,7 +80,15 @@ public class GameManager : MonoBehaviour
     //callback duncion que se va a llamar en el on click de los botoones
     public void LoadScene (string sceneName)
     {
+        Debug.Log("Start");
         SceneManager.LoadScene (sceneName);
+        AudioManager.instance.ClearAudios();                //audiomanager, limpia todos los sonidos que estan sonando
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Exit!!");
+        Application.Quit ();
     }
 }
 // Event System 
