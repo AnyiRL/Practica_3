@@ -36,8 +36,20 @@ public class AudioManager : MonoBehaviour
         audioSourceComponent.loop = isLoop;
         audioSourceComponent.Play();                                                           //darle a empezar
         audioList.Add(audioObject);                                                   
-
+        if(!isLoop)           //si audio no esta en loop
+        {
+           StartCoroutine(WaitAudioEnd(audioSourceComponent));      // Una corrutina -  no pausa la ejecucion del programa entre los bucles.
+        }
         return audioSourceComponent;
+    }
+
+    IEnumerator WaitAudioEnd (AudioSource src)  // Una corrutina -  no pausa la ejecucion del programa entre los bucles. Hilos y p
+    {
+        while(src && src.isPlaying)      //esperar que el src acabe 
+        {
+            yield return null;     // le devuelve el control a unity pero despues vuelve a yield 
+        }
+        Destroy(src.gameObject);
     }
 
     public void ClearAudios()
@@ -48,6 +60,7 @@ public class AudioManager : MonoBehaviour
         }
         audioList.Clear();
     }
+   
 }
 
 

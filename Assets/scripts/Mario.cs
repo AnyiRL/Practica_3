@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,6 +16,7 @@ public class Mario : MonoBehaviour
     public float rayDistance;
     public KeyCode upKey, downKey;
     public LayerMask groundMask;   //capa de colisiones
+    public AudioClip jumpClip;
 
     private float currentTime = 0;
     private SpriteRenderer _rend;
@@ -40,16 +42,21 @@ public class Mario : MonoBehaviour
     {
 
         dir = Vector2.zero;
+
+        MoveX();
+        
         if (Input.GetKey(leftKey))
         {
-            _rend.flipX = true;
-            dir = new Vector2(-1, 0);
+                _rend.flipX = true;
+                dir = new Vector2(-1, 0);
         }
         else if (Input.GetKey(rightKey))
         {
-            _rend.flipX= false;
-            dir = new Vector2(1, 0);
+                _rend.flipX = false;
+                dir = new Vector2(1, 0);
         }
+        
+        
 
         _intentionToJump = false;
         if (Input.GetKey(jumpKey))
@@ -79,7 +86,20 @@ public class Mario : MonoBehaviour
             Escalera();
         }
         
-
+   
+    }
+    public void MoveX()
+    {
+        if (Input.GetKey(leftKey))
+        {
+            _rend.flipX = true;
+            dir = new Vector2(-1, 0);
+        }
+        else if (Input.GetKey(rightKey))
+        {
+            _rend.flipX = false;
+            dir = new Vector2(1, 0);
+        }
     }
 
     private void OnDrawGizmos()                                      //gizmos=Lineas guias
@@ -104,6 +124,7 @@ public class Mario : MonoBehaviour
             _animator.Play("jump");
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
+            AudioManager.instance.PlayAudio(jumpClip, "jumpSound");
 
         }
         _animator.SetBool("isGrounded",grnd);                       // optimizar
@@ -111,6 +132,7 @@ public class Mario : MonoBehaviour
     public void Escalera()
 
     {
+        dir = Vector2.zero;
         if (Input.GetKey(upKey))
         {
             _animator.Play("subir");
@@ -120,6 +142,10 @@ public class Mario : MonoBehaviour
         {
             _animator.Play("bajar");
             dir = new Vector2(0, -1);
+        }
+        else if(Input.GetKey(rightKey)|| Input.GetKey(leftKey))
+        {
+            MoveX();
         }
        
 

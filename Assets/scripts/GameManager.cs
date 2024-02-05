@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     private float time;
     private int points;
-    private int lifes;
+    private int lifes = 3;
 
     private void Awake()
     {
@@ -55,11 +55,11 @@ public class GameManager : MonoBehaviour
     //{
     //}
 
-    public void SetPoints(int puntosASumar)
+    public void AddPoints(int puntosASumar)
     {
         points += puntosASumar;
     }
-    public void Setlifes(int vidasASumar)
+    public void AddLifes(int vidasASumar)
     {
         lifes  += vidasASumar;
     }

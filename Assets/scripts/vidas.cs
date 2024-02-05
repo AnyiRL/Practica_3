@@ -5,14 +5,14 @@ using UnityEngine;
 public class vidas : MonoBehaviour
 {
     public int valor = 1;
-    public GameManager manager;
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Mario marioComponent = collision.GetComponent<Mario>();
         if (marioComponent != null)
         {
-            manager.Setlifes(valor);
+            GameManager.instance.AddLifes(valor);
             Destroy(gameObject);
         }
 

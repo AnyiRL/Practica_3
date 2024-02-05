@@ -175,7 +175,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -201,7 +202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &114811880
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 191388670}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1c0d3e711fc7b0646ba6bfe3697a49d1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -644,7 +644,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -704,7 +705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -730,7 +732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &290104003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6776926277378079114, guid: 73806145adb1bcd438d979af79d83947, type: 3}
@@ -749,7 +750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &347141638
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 106, y: -26}
+  m_AnchoredPosition: {x: 93.600006, y: -26}
   m_SizeDelta: {x: 20, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347141640
@@ -843,7 +843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &425099779
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,8 +928,8 @@ GameObject:
   m_Component:
   - component: {fileID: 444275745}
   - component: {fileID: 444275744}
-  - component: {fileID: 444275746}
   - component: {fileID: 444275743}
+  - component: {fileID: 444275746}
   m_Layer: 5
   m_Name: vida_inicial
   m_TagString: Untagged
@@ -958,7 +957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1051,7 +1050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -67.5, y: -28}
+  m_AnchoredPosition: {x: -64.70001, y: -28}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444275746
@@ -1119,7 +1118,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1145,7 +1145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1001 &492673650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,7 +1197,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2056,7 +2056,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2133,41 +2134,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
   m_PrefabInstance: {fileID: 5437860647605007243}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &545613088
-CapsuleCollider2D:
+--- !u!114 &545613095
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545613081}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.36, y: 0.53}
-  m_Direction: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebaa89ee88edba4a82ba65cea653456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 0
 --- !u!1 &561329373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6776926277378079114, guid: 73806145adb1bcd438d979af79d83947, type: 3}
@@ -2186,7 +2165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &646148942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6776926277378079114, guid: 73806145adb1bcd438d979af79d83947, type: 3}
@@ -2205,7 +2183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &708590557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,7 +2378,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2485,7 +2463,6 @@ GameObject:
   - component: {fileID: 751578527}
   - component: {fileID: 751578526}
   - component: {fileID: 751578525}
-  - component: {fileID: 751578524}
   m_Layer: 5
   m_Name: 'puntos '
   m_TagString: Untagged
@@ -2493,21 +2470,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &751578524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751578523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12ee7895319a1445bcc40011ffa7b4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 1703089971}
-  puntuacion: {fileID: 1938143605}
-  vidas: {fileID: 444275743}
 --- !u!114 &751578525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,7 +2552,7 @@ RectTransform:
   - {fileID: 347141639}
   - {fileID: 444275745}
   - {fileID: 1453498709}
-  m_Father: {fileID: 1710908157}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2713,7 +2675,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2800,7 +2763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &949183403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +2894,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1001 &1011859843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2985,7 +2946,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4416,6 +4378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RUAN_ANYI_A3D_AE2D3D_07_2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107261342669591272, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 8191227717080121505, guid: 8f0714325449e9d45a21b021aa1b3717, type: 3}
       propertyPath: speed
       value: 10
@@ -4451,7 +4417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &1225956030
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,7 +4525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1001 &1280968417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4720,7 +4684,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4786,10 +4751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3349903042833121143, guid: 5d18cd92a8a299d46a19863f2b32e219, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 751578528}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d18cd92a8a299d46a19863f2b32e219, type: 3}
 --- !u!1 &1416782434 stripped
@@ -5053,6 +5015,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d18cd92a8a299d46a19863f2b32e219, type: 3}
+--- !u!1 &1493877282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493877284}
+  - component: {fileID: 1493877283}
+  m_Layer: 0
+  m_Name: PlayBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1493877283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493877282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0060b258049e47a4fa13766b2d3483b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 95264046667b8f94c9a40cf1a5acac33, type: 3}
+  isLoop: 1
+  playOnGameStart: 1
+  volume: 0.5
+  gameObjectName: menuBGMusic
+--- !u!4 &1493877284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493877282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.4511, y: 245.49197, z: -2.8910646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1526119101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5105,7 +5116,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5165,7 +5177,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5191,7 +5204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &1703089970
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,11 +5248,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1710908157 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3349903042833121143, guid: 5d18cd92a8a299d46a19863f2b32e219, type: 3}
-  m_PrefabInstance: {fileID: 1385207056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1712380800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5293,7 +5300,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5319,7 +5327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &1879349193
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,7 +5513,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5564,6 +5572,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47, y: 0.33}
   m_EdgeRadius: 0
+--- !u!1 &1919923810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919923812}
+  - component: {fileID: 1919923811}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1919923811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919923810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f79f5293b0d52147bc4b33fa22a1ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1919923812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919923810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 511.1044, y: 241.91095, z: -2.458442}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938143604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5603,7 +5655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5666,7 +5718,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0.45871735, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.45871735, z: 4.8071213, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5696,7 +5748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -421, y: -53.899994}
+  m_AnchoredPosition: {x: -478, y: -53.899994}
   m_SizeDelta: {x: 100, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938143608
@@ -5730,7 +5782,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1 &2032837702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,7 +5934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1001 &2044050886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5936,7 +5986,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5996,7 +6047,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105092667166841818, guid: 73806145adb1bcd438d979af79d83947, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -6022,7 +6074,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  manager: {fileID: 1703089971}
 --- !u!1001 &5437860647605007243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6031,6 +6082,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1314584001626392964, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eff9eba11503f804f934a8602afdd046, type: 3}
     - target: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       propertyPath: m_Name
       value: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_15 1
@@ -6080,13 +6135,13 @@ PrefabInstance:
       value: 0.27
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 7951121461406361451, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 545613088}
+      addedObject: {fileID: 545613095}
   m_SourcePrefab: {fileID: 100100000, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
 --- !u!20 &8792781404386854440 stripped
 Camera:
@@ -6130,3 +6185,6 @@ SceneRoots:
   - {fileID: 5437860647605007243}
   - {fileID: 1136113686}
   - {fileID: 1385207056}
+  - {fileID: 1493877284}
+  - {fileID: 751578528}
+  - {fileID: 1919923812}
