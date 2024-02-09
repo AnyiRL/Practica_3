@@ -34,12 +34,15 @@ public class UpdateText : MonoBehaviour
             case GameManager.GameManagerVariables.TIME:
                 textComponent.text = "Time: " + GameManager.instance.GetTime();
                 break;
-            case GameManager.GameManagerVariables.POINTS:
+            case GameManager.GameManagerVariables.COINS:
 
-                textComponent.text = " " + GameManager.instance.GetPoints();
+                textComponent.text = " " + GameManager.instance.GetCoins();
                 break;
             case GameManager.GameManagerVariables.LIFES:
                 textComponent.text = " " + GameManager.instance.GetLifes();
+                break;
+            case GameManager.GameManagerVariables.POINTS:
+                textComponent.text = " " + GameManager.instance.GetPoints();
                 break;
             default:
                 break;

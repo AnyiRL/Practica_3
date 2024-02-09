@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class hoja : MonoBehaviour
 {
-    public float valor = 1;
-    public GameManager manager;
+    public int valor = 1;
+    public AudioClip hojaClip;
+
     //private float currentTime = 0;
     //private float maxTime;
     void Start()
@@ -21,6 +22,9 @@ public class hoja : MonoBehaviour
         //currentTime += Time.deltaTime;
         if (marioComponent != null )//&& currentTime > maxTime)
         {
+            AudioManager.instance.PlayAudio(hojaClip, "hojaSound");
+            GameManager.instance.RLifes(valor);
+            
             //manager.RestarVidas(valor);
             //currentTime = 0;
             //maxTime = 0;

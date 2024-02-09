@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public enum GameManagerVariables { TIME, POINTS,LIFES};  //enum declarar estructura sirve para facilitar la lectura a otros programadores
+    public enum GameManagerVariables { COINS,TIME,LIFES,POINTS};  //enum declarar estructura sirve para facilitar la lectura a otros programadores
 
     private float time;
-    private int points;
+    private int coins;
     private int lifes = 3;
+    private int enemy;
+    private int initialCoins, initialLifes, initialEnemy;
 
     private void Awake()
     {
@@ -27,27 +29,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    void Start()
+    {
+        initialCoins = coins;
+        initialLifes = lifes;
+        initialEnemy = enemy;
+        
+    }
+
+    public void Reset()
+    {
+        coins = initialCoins;
+        lifes = initialLifes;
+        enemy = initialEnemy;
+    }
+
+
     void Update()
     {
         time += Time.deltaTime;
       
-        //if (vidasTotales < 1)
-        //{
-        //    FindAnyObjectByType<Mario>().ResetGame();
-        //}
     }
     public float GetTime()
     {
         return time;
     }
-    public int GetPoints()
+    public int GetCoins()
     {
-        return points;
+        return coins;
     }
     public int GetLifes()
     {
         return lifes;
+    }
+    public int GetPoints()
+    {
+        return enemy;
     }
 
     //setter establecer, cambiar
@@ -55,29 +72,30 @@ public class GameManager : MonoBehaviour
     //{
     //}
 
-    public void AddPoints(int puntosASumar)
+    public void AddCoins(int monedasASumar)
     {
-        points += puntosASumar;
+        coins += monedasASumar;
     }
     public void AddLifes(int vidasASumar)
     {
         lifes  += vidasASumar;
     }
-    
-    //public void SumarPuntos( float puntosASumar)
-    //{
-    //    puntosTotales += puntosASumar;
-    //}
-    //public void SumarVidas(float vidasASumar)
-    //{
-    //    vidasTotales += vidasASumar;
-    //}
-    //public void RestarVidas(float vidasARestar)
-    //{
-    //    vidasTotales -= vidasARestar;
-    //}
+    public void RLifes(int vidasARestar)
+    {
+        lifes -= vidasARestar;
+        if (lifes <=0)
+        {
+            FindAnyObjectByType<Mario>().ResetGame();
+        }
+    }
+    public void AddPoints(int puntosASumar)
+    {
+        enemy += puntosASumar;
+    }
 
-    //callback duncion que se va a llamar en el on click de los botoones
+
+
+    //callback funcion que se va a llamar en el on click de los botoones
     public void LoadScene (string sceneName)
     {
         Debug.Log("Start");

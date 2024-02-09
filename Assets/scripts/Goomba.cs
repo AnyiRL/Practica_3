@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class Goomba : MonoBehaviour
 {
+    public AudioClip goombaClip, marioClip;
+    public int valor = 100;
     //private SpriteRenderer _rend;
     //private Vector2 _dir;
     //private float x;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,8 @@ public class Goomba : MonoBehaviour
         Mario marioComponent = collision.gameObject.GetComponent<Mario>();
         if (collision.gameObject.GetComponent<Mario>() != null)
         {
-            marioComponent.ResetGame();  
+            marioComponent.ResetGame();
+            AudioManager.instance.PlayAudio(marioClip, "MarioMuereSound");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,6 +45,8 @@ public class Goomba : MonoBehaviour
         if (collision.GetComponent<Mario>() != null)
         {
             Destroy(gameObject);
+            AudioManager.instance.PlayAudio(goombaClip, "goombaMuereSound");
+            GameManager.instance.AddPoints(valor);
         }
 
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class moneda : MonoBehaviour
 {
     public int valor = 1;
+    public AudioClip coinClip;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -12,7 +13,8 @@ public class moneda : MonoBehaviour
         Mario marioComponent = collision.GetComponent<Mario>();
         if (marioComponent != null)
         {
-            GameManager.instance.AddPoints(valor);
+            AudioManager.instance.PlayAudio(coinClip, "coinSound");
+            GameManager.instance.AddCoins(valor);
             // GetComponent<Collider2D>().enabled = false;
             Destroy(gameObject);
         }

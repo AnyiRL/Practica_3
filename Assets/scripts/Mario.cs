@@ -182,17 +182,7 @@ public class Mario : MonoBehaviour
             
         }
     }
-    public void ResetGame()
-    {
-        SceneManager.LoadScene("sprite");
-        _animator.Play("start");
-    }
-    public void Final()
-    {
-        
-        _animator.Play("final");
-        Debug.Log("YouWin");
-    }
+    
 
     public void SetOnStair(bool value)
     {
@@ -219,7 +209,18 @@ public class Mario : MonoBehaviour
         _animator.Play("start");
         
     }
-
-
-
+    
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("sprite");
+        _animator.Play("start");
+        GameManager.instance.Reset();
+    }
+    
+    public void Final()
+    {
+        
+        _animator.Play("final");
+        Debug.Log("YouWin");
+    }
 }

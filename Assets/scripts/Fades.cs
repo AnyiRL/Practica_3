@@ -20,8 +20,7 @@ public class Fades : MonoBehaviour                                         //Cam
         {
             StartCoroutine(FadeOut());
         }
-        
-        if (alpha == 0)
+        else if(alpha == 0)
         {
             StartCoroutine(FadeIn());
         }

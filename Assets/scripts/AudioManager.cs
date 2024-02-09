@@ -26,13 +26,13 @@ public class AudioManager : MonoBehaviour
         audioList = new List<GameObject>();
     }
 
-    public AudioSource PlayAudio(AudioClip audioClip, string gameObjectName, bool isLoop = false,float volumne = 1.0f)           //valor por defecto, tiene que estar en la ultima parte y no pueden estar intercalados 
+    public AudioSource PlayAudio(AudioClip audioClip, string gameObjectName, bool isLoop = false,float volume = 1.0f)           //valor por defecto, tiene que estar en la ultima parte y no pueden estar intercalados 
     {
         GameObject audioObject = new GameObject(gameObjectName);
         audioObject.transform.SetParent(transform);           //hace que los objetos son hijos del game manager
         AudioSource audioSourceComponent = audioObject.AddComponent<AudioSource>();            //aniado componente AudioSource 
         audioSourceComponent.clip = audioClip;                                                 //le asignamos clip, volumen y loop al componente
-        audioSourceComponent.volume = volumne;
+        audioSourceComponent.volume = volume;
         audioSourceComponent.loop = isLoop;
         audioSourceComponent.Play();                                                           //darle a empezar
         audioList.Add(audioObject);                                                   
@@ -60,7 +60,12 @@ public class AudioManager : MonoBehaviour
         }
         audioList.Clear();
     }
-   
+    public AudioSource PlayAudio3D(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f)
+    {
+        AudioSource audioSource = PlayAudio(audioClip, gameObjectName, false, volume);
+        audioSource.spatialBlend = 1;
+        return audioSource;
+    }
 }
 
 
