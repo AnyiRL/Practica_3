@@ -150,6 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131b1c3d3e604284b9d807717eaa74a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goombaClip: {fileID: 8300000, guid: dbad738c462e6764c8b31a7f4bae27ac, type: 3}
+  marioClip: {fileID: 8300000, guid: 6f165cc492946a240892e621bf362940, type: 3}
+  valor: 100
 --- !u!58 &6107261342669591272
 CircleCollider2D:
   m_ObjectHideFlags: 0

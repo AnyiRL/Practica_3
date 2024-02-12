@@ -3,7 +3,8 @@ guid: 7af74d92473f97f4b810e31187bc764e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - vidaClip: {fileID: 8300000, guid: bdca309d82299674eacda2dcd286bcc4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

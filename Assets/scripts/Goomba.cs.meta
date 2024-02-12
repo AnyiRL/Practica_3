@@ -3,7 +3,9 @@ guid: 131b1c3d3e604284b9d807717eaa74a8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - goombaClip: {fileID: 8300000, guid: bdca309d82299674eacda2dcd286bcc4, type: 3}
+  - marioClip: {fileID: 8300000, guid: 6f165cc492946a240892e621bf362940, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

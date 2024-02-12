@@ -35,9 +35,9 @@ public class Goomba : MonoBehaviour
     {
         Mario marioComponent = collision.gameObject.GetComponent<Mario>();
         if (collision.gameObject.GetComponent<Mario>() != null)
-        {
-            marioComponent.ResetGame();
+        {  
             AudioManager.instance.PlayAudio(marioClip, "MarioMuereSound");
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

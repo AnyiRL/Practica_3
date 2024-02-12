@@ -24,6 +24,7 @@ public class hoja : MonoBehaviour
         {
             AudioManager.instance.PlayAudio(hojaClip, "hojaSound");
             GameManager.instance.RLifes(valor);
+            collision.gameObject.GetComponent<Fades>().Fade();
             
             //manager.RestarVidas(valor);
             //currentTime = 0;

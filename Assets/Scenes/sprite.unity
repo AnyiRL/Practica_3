@@ -872,7 +872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -974.90045, y: -75.600006}
+  m_AnchoredPosition: {x: -771, y: -75.600006}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425099781
@@ -1045,7 +1045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1048.2, y: -79.5}
+  m_AnchoredPosition: {x: -844.29944, y: -79.5}
   m_SizeDelta: {x: 46.62, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444275746
@@ -2119,7 +2119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebaa89ee88edba4a82ba65cea653456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpha: 0
 --- !u!4 &561329375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5115468443640046830, guid: 73806145adb1bcd438d979af79d83947, type: 3}
@@ -2477,7 +2476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.29999, y: -125.2}
+  m_AnchoredPosition: {x: 143, y: -125.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735265804
@@ -3111,7 +3110,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: db24b8b9be9323a4b99ba94c2a5a3720, type: 3}
+  m_audioClip: {fileID: 8300000, guid: da95af94ea77db842b9bb6cd16a954b1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3320,6 +3319,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5115468443640046830, guid: 73806145adb1bcd438d979af79d83947, type: 3}
   m_PrefabInstance: {fileID: 231968589}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1010921740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010921742}
+  - component: {fileID: 1010921741}
+  m_Layer: 0
+  m_Name: PlayBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010921741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010921740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0060b258049e47a4fa13766b2d3483b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: da95af94ea77db842b9bb6cd16a954b1, type: 3}
+  isLoop: 0
+  playOnGameStart: 0
+  volume: 0
+  gameObjectName: 
+--- !u!4 &1010921742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010921740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.9882, y: 245.4426, z: -2.8776352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1011859843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5440,7 +5488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1493877283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5448,12 +5496,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493877282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0060b258049e47a4fa13766b2d3483b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 95264046667b8f94c9a40cf1a5acac33, type: 3}
+  audioClip: {fileID: 8300000, guid: da95af94ea77db842b9bb6cd16a954b1, type: 3}
   isLoop: 1
   playOnGameStart: 1
   volume: 0.5
@@ -6167,7 +6215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -499.4, y: -26.565002}
+  m_AnchoredPosition: {x: -390, y: -26.565002}
   m_SizeDelta: {x: 48.51, y: 41.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938143608
@@ -6256,7 +6304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -919.2, y: -78.000015}
+  m_AnchoredPosition: {x: -728, y: -78.000015}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032837704
@@ -6627,7 +6675,7 @@ PrefabInstance:
     - target: {fileID: 1314584001626392964, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       propertyPath: jumpClip
       value: 
-      objectReference: {fileID: 8300000, guid: eff9eba11503f804f934a8602afdd046, type: 3}
+      objectReference: {fileID: 8300000, guid: 566c97e5175400f46aa7e01063551a55, type: 3}
     - target: {fileID: 3470925362621221564, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       propertyPath: m_Name
       value: RUAN_ANYI_A3D_AE2D3D_03_spritesheet 1_15 1
@@ -6711,3 +6759,4 @@ SceneRoots:
   - {fileID: 398628053}
   - {fileID: 1508027405}
   - {fileID: 904751076}
+  - {fileID: 1010921742}

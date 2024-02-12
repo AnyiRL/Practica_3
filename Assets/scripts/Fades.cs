@@ -5,27 +5,30 @@ using UnityEngine;
 
 public class Fades : MonoBehaviour                                         //Cambia la opacidad del personaje
 {
-    public float alpha;
+    
     private SpriteRenderer _rend;
     // Start is called before the first frame update
     void Start()
     {
         _rend = GetComponent<SpriteRenderer>();
         
-        
-    }
-    private void Update()
-    {
-        if (alpha==1)
-        {
-            StartCoroutine(FadeOut());
-        }
-        else if(alpha == 0)
-        {
-            StartCoroutine(FadeIn());
-        }
-    }
 
+    }
+    //private void Update()
+    //{
+    //    if (alpha==1)
+    //    {
+    //        StartCoroutine(FadeOut());
+    //    }
+    //    else if(alpha == 0)
+    //    {
+    //        StartCoroutine(FadeIn());
+    //    }
+    //}
+    public void Fade()
+    {
+        StartCoroutine(FadeOut());
+    }
     IEnumerator FadeOut()
     {
         Color color = _rend.color;                                         //guarda color 
@@ -33,8 +36,9 @@ public class Fades : MonoBehaviour                                         //Cam
         {
             color.a = alpha;
             _rend.color = color;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
+        StartCoroutine(FadeIn());
     }
     IEnumerator FadeIn()
     {
@@ -43,7 +47,7 @@ public class Fades : MonoBehaviour                                         //Cam
         {
             color.a = alpha;
             _rend.color = color;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
 
     }

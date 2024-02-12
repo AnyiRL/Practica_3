@@ -232,6 +232,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  jumpClip: {fileID: 8300000, guid: eff9eba11503f804f934a8602afdd046, type: 3}
 --- !u!95 &4718606139829496970
 Animator:
   serializedVersion: 5

@@ -97,3 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af74d92473f97f4b810e31187bc764e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valor: 1
+  vidaClip: {fileID: 8300000, guid: d899909b398dca44dbb04c38eb2df10d, type: 3}
