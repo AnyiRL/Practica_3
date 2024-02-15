@@ -870,9 +870,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 751578528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -771, y: -75.600006}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140.40002, y: -75.600006}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425099781
@@ -1043,10 +1043,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 751578528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -844.29944, y: -79.5}
-  m_SizeDelta: {x: 46.62, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 67.100586, y: -79.5}
+  m_SizeDelta: {x: 46.619995, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444275746
 MonoBehaviour:
@@ -2657,7 +2657,7 @@ Canvas:
   m_GameObject: {fileID: 751578523}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 8792781404386854440}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -6213,10 +6213,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 751578528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -390, y: -26.565002}
-  m_SizeDelta: {x: 48.51, y: 41.13}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 67.399994, y: -26.565002}
+  m_SizeDelta: {x: 48.51001, y: 41.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938143608
 MonoBehaviour:
@@ -6302,9 +6302,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 751578528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -728, y: -78.000015}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 183.40002, y: -78.000015}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032837704
@@ -6524,7 +6524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
