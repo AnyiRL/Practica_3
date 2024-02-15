@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Escalera : MonoBehaviour
 {
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Mario marioComponent = collision.GetComponent<Mario>();

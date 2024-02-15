@@ -48,11 +48,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-      
     }
     public float GetTime()
     {
-        return time;
+        return time ;
     }
     public int GetCoins()
     {

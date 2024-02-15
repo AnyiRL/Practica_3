@@ -32,7 +32,7 @@ public class UpdateText : MonoBehaviour
         switch (variable) 
         {
             case GameManager.GameManagerVariables.TIME:
-                textComponent.text = "Time: " + GameManager.instance.GetTime();
+                textComponent.text = "Time: " + GameManager.instance.GetTime().ToString("F2");
                 break;
             case GameManager.GameManagerVariables.COINS:
 

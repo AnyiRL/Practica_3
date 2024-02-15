@@ -16,7 +16,7 @@ public class Mario : MonoBehaviour
     public float rayDistance;
     public KeyCode upKey, downKey;
     public LayerMask groundMask;   //capa de colisiones
-    public AudioClip jumpClip;
+    public AudioClip jumpClip, walkClip, idleClip, escaleraUpClip, escaleraDclip;
 
     private float currentTime = 0;
     private SpriteRenderer _rend;
@@ -66,6 +66,7 @@ public class Mario : MonoBehaviour
         if(dir != Vector2.zero)                     //andando                           //#region #endregion para ordenar el codigo
         {
             _animator.SetBool("isWalking", true);
+            AudioManager.instance.PlayAudio(walkClip, "walkSound");
             //_animator.Play("walk");
         }
         else                                        //parados
@@ -78,6 +79,7 @@ public class Mario : MonoBehaviour
         {
             _animator.SetBool("idle", true);
             currentTime = 0;
+            AudioManager.instance.PlayAudio(idleClip, "idleSound");
 
         }
 
@@ -137,15 +139,20 @@ public class Mario : MonoBehaviour
         {
             _animator.Play("subir");
             dir = new Vector2(0, 1);
+            AudioManager.instance.PlayAudio(escaleraUpClip, "upSound");
+            
         }
         else if (Input.GetKey(downKey))
         {
             _animator.Play("bajar");
             dir = new Vector2(0, -1);
+            AudioManager.instance.PlayAudio(escaleraDclip, "DSound");
         }
-        else if(Input.GetKey(rightKey)|| Input.GetKey(leftKey))
+        else if(Input.GetKey(rightKey) || Input.GetKey(leftKey))
         {
             MoveX();
+            rb.gravityScale = 0;
+            speed = originalSpeed / 10;
         }
        
 
