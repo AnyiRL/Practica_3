@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
         audioList.Add(audioObject);                                                   
         if(!isLoop)           //si audio no esta en loop
         {
-           StartCoroutine(WaitAudioEnd(audioSourceComponent));      // Una corrutina -  no pausa la ejecucion del programa entre los bucles.
+           StartCoroutine(WaitAudioEnd(audioSourceComponent));      // Una corrutina -  permite ejecutarse en cada frame o que espere cierto numero de segundos antes de continuar,.no pausa la ejecucion del programa entre los bucles.
         }
         return audioSourceComponent;
     }
