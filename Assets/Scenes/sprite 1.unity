@@ -7353,6 +7353,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1314584001626392964, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+      propertyPath: LayerCast
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314584001626392964, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       propertyPath: escaleraDclip
       value: 
       objectReference: {fileID: 0}
@@ -7402,6 +7406,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3647923850279330974, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977853494576754584, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977853494576754584, guid: 9d2b4255f4bcba3478b88c3bcf0ca90f, type: 3}
+      propertyPath: m_LinearDrag
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

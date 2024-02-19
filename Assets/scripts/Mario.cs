@@ -17,6 +17,7 @@ public class Mario : MonoBehaviour
     public KeyCode upKey, downKey;
     public LayerMask groundMask;   //capa de colisiones
     public AudioClip jumpClip, walkClip, idleClip, escaleraUpClip, escaleraDclip;
+    public int maxJump = 2;
 
     private float currentTime = 0;
     private SpriteRenderer _rend;
@@ -27,6 +28,7 @@ public class Mario : MonoBehaviour
     private Vector3 originalPosition;
     private bool onStair;
     private float originalSpeed;
+    private int currentJumps = 0;    //index
     // Start is called before the first frame update
     void Start()
     {
@@ -55,11 +57,8 @@ public class Mario : MonoBehaviour
                 _rend.flipX = false;
                 dir = new Vector2(1, 0);
         }
-        
-        
 
-        _intentionToJump = false;
-        if (Input.GetKey(jumpKey))
+        if (Input.GetKeyDown(jumpKey))
         {
             _intentionToJump = true;
         }
@@ -80,7 +79,6 @@ public class Mario : MonoBehaviour
             _animator.SetBool("idle", true);
             currentTime = 0;
             AudioManager.instance.PlayAudio(idleClip, "idleSound");
-
         }
 
         if(onStair)
@@ -121,15 +119,17 @@ public class Mario : MonoBehaviour
             rb.velocity = nVel;
         } 
        
-       if (_intentionToJump && grnd) 
+       if (_intentionToJump && (grnd || currentJumps < maxJump -1))        
         {
-            _animator.Play("jump");
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.AddForce(new Vector2(0,jumpForce * rb.gravityScale), ForceMode2D.Impulse);
-            AudioManager.instance.PlayAudio(jumpClip, "jumpSound");
-
-        }
+                _animator.Play("jump");
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+                rb.AddForce(new Vector2(0, jumpForce * rb.gravityScale), ForceMode2D.Impulse);
+                currentJumps++;           //index = 1
+                AudioManager.instance.PlayAudio(jumpClip, "jumpSound");
+        }  
+        _intentionToJump = false;
         _animator.SetBool("isGrounded",grnd);                       // optimizar
+    
     }
     public void Escalera()
 
@@ -140,19 +140,20 @@ public class Mario : MonoBehaviour
             _animator.Play("subir");
             dir = new Vector2(0, 1);
             AudioManager.instance.PlayAudio(escaleraUpClip, "upSound");
-            
+            speed = originalSpeed / 10;
+
         }
         else if (Input.GetKey(downKey))
         {
             _animator.Play("bajar");
             dir = new Vector2(0, -1);
             AudioManager.instance.PlayAudio(escaleraDclip, "DSound");
+            speed = originalSpeed / 10;
         }
         else if(Input.GetKey(rightKey) || Input.GetKey(leftKey))
         {
             MoveX();
-            rb.gravityScale = 0;
-            speed = originalSpeed / 10;
+            speed = originalSpeed;
         }
        
 
@@ -164,7 +165,8 @@ public class Mario : MonoBehaviour
         RaycastHit2D collision = Physics2D.Raycast(transform.position, Vector2.down, rayDistance,groundMask);  
         if (collision)
         {
-            return true;
+            currentJumps = 0;
+            return true;        
         }
         return false;
     }
@@ -197,7 +199,7 @@ public class Mario : MonoBehaviour
         if(value)
         {
             rb.gravityScale = 0;
-            speed = originalSpeed /10;
+            
         }
         else
         {
